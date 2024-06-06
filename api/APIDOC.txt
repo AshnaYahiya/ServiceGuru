@@ -66,11 +66,35 @@ url:http://127.0.0.1:8000/api/customers/{id}/
 
 url:http://127.0.0.1:8000/api/customers/{id}/
 
-  method:DELTE
+  method:DELETE
 
   body:nill
 
   authentication:Token
+
+
+7)api for adding work
+
+  url:http://127.0.0.1:8000/api/customers/{id}/add_work/
+
+  method:POST
+
+  body:{title,description,amount}
+
+ 
+
+  8) another api for adding work
+
+   url:http://127.0.0.1:8000/api/customers/{id}/work/
+
+  method:POST
+
+  body:{title,description,amount}
+
+  
+
+
+
 
 
 
