@@ -1,0 +1,76 @@
+1) api for fetching token
+
+  url:http://127.0.0.1:8000/api/token/
+
+  method:POST
+
+  body:{username, password}
+
+  authentication:nill
+
+schema:Customer
+attributes:[
+                name,
+                email,
+                phone,
+                vehicle_number,
+                running_km,
+                technician,
+                status,
+                created_date,
+                updated_date,
+                is_active
+            ]
+
+2) api for listing all customers
+
+ url:http://127.0.0.1:8000/api/customers/
+
+  method:GET
+
+  body:nill
+
+  authentication:Token
+
+3)api for adding customer
+
+url:http://127.0.0.1:8000/api/customers/
+
+  method:POST
+
+  body:{name,email,phone,vehicle_number,running_km}
+
+  authentication:Token
+
+4) api for retrieving customers detail
+
+url:http://127.0.0.1:8000/api/customers/{id}/
+
+  method:GET
+
+  body:nill
+
+  authentication:Token
+
+5)api for updating customers detail
+
+url:http://127.0.0.1:8000/api/customers/{id}/
+
+  method:PUT
+
+  body:{name,email,phone,vehicle_number,running_km}
+
+  authentication:Token
+
+6) api for deleting customers
+
+url:http://127.0.0.1:8000/api/customers/{id}/
+
+  method:DELTE
+
+  body:nill
+
+  authentication:Token
+
+
+
